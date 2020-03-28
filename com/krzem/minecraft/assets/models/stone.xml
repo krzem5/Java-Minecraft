@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<model>
+    <parents>
+        <parent name="box"/>
+    </parents>
+    <textures>
+        <texture id="box-box">
+            stone
+        </texture>
+    </textures>
+    <parts>
+        <main>
+            <draw model="box">main</draw>
+        </main>
+    </parts>
+</model>
