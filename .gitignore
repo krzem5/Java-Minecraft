@@ -2,3 +2,4 @@
 
 **/*.class
 *.xml
+!com/krzem/minecraft/assets/models/*.xml
