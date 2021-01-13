@@ -1,5 +1,2 @@
-### Github File Push Ignore
-
-**/*.class
 *.xml
 !com/krzem/minecraft/assets/models/*.xml
