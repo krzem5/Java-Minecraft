@@ -119,7 +119,7 @@ public class IO extends Constants{
 
 
 
-	private static ArrayList<Element> _get_children_by_tag_name(Element p,String tn){
+	public static ArrayList<Element> _get_children_by_tag_name(Element p,String tn){
 		ArrayList<Element> o=new ArrayList<Element>();
 		NodeList cl=p.getChildNodes();
 		for (int j=0;j<cl.getLength();j++){

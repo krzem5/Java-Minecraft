@@ -42,4 +42,4 @@ with zipfile.ZipFile("build/minecraft.jar","w") as zf:
 					print(f"Writing: {e}")
 					zf.writestr(e,jf.read(e))
 if ("--run" in sys.argv):
-	subprocess.run(["java","-Dfile.encoding=UTF8","-jar","build/minecraft.jar"])
+	subprocess.run(["java","-Dfile.encoding=UTF8","-jar","build/minecraft.jar","test.xml"])

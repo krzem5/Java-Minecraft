@@ -3,6 +3,7 @@ package com.krzem.minecraft;
 
 
 import java.lang.Exception;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -26,9 +27,9 @@ public class BlockModelLoader extends Constants{
 
 
 	public static void _load_all(){
-		for (String fp:new File(MODEL_DIR).listFiles()){
+		for (File fp:new File(MODEL_DIR).listFiles()){
 			try{
-				Document doc=DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(fp);
+				Document doc=DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(fp.getAbsolutePath());
 				doc.getDocumentElement().normalize();
 				Element root=doc.getDocumentElement();
 				for (Element p:IO._get_children_by_tag_name(root,"parents")){
