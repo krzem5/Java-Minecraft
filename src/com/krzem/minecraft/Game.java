@@ -59,7 +59,6 @@ public class Game extends Constants{
 
 
 
-
 		for (Chunk c:this.cl){
 			c.draw(gl);
 		}
